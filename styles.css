@@ -1,0 +1,75 @@
+body {
+   font-family: 'arial';
+}
+
+:root {
+   --size: 2rem
+}
+.navbar {
+display: flex;
+background: black;
+justify-content: space-between;
+padding: var(--size);
+gap:20 px;
+}
+.navbar:hover {
+   background: brown;
+}
+.navbar a {
+   color: white;
+   text-decoration:none;
+   padding: .5 rem var(--size);
+}
+.content{
+   display:grid;
+   grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+   gap: var(--size);
+   padding:var(--size)
+}
+.content div {
+background-color: #f1f1f1;
+padding: var(--size);
+text-align: center;
+transition: 1s linear;
+}
+
+.content div:hover{
+ background:rgb(85, 76, 8);
+}
+.box{
+   background: #f1f1f1;
+   transition: 1sec;
+}
+.box:hover{
+   background: yellow;
+}
+
+button{
+   box-sizing: 20px;
+   min-height: 100vh;
+   align-content: center;
+   justify-content: center;
+   align-items: center;
+   background-color: rgb(251, 4, 4);
+   
+}
+.button-animation{
+width: 200px;
+height: 30px;
+font-size: 4rem;
+}
+
+.button-animation:active {
+transform: scale(.9);
+}
+.button-animation:hover{
+   animation:button-animation 0.9 both;
+}
+@keyframes .button-animation {
+   0%{
+      transform: scale3d(1, 1, 1,);
+   }
+   50%{
+      transform: scale3d(1, 15, 0.85,1) 
+   }
+}
