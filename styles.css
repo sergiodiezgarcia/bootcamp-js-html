@@ -1,75 +1,78 @@
-body {
-   font-family: 'arial';
+.container {
+  display: flex;
+  background-color: #ffffff;
+  width: 100%;
+  box-sizing: border-box;
+
 }
 
-:root {
-   --size: 2rem
+.menu {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border: 1px solid rgb(0, 0, 0);
 }
+
+.box {
+  background-color: #ffffff;
+  padding: 5px;
+  margin: 20px;
+  width: 5 px;
+  text-align: center;
+  font-size: 5px;
+  flex: 1;
+  border-radius: 30px;
+}
+img {
+  padding: 20px;
+  margin: 0px;
+  width: 10 px;
+  text-align: right;
+  font-size: 20px;
+  flex: 1;
+  border-radius: 30px;
+  color: #ffffff;
+}
+.h2´ {
+  flex: 1;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffffff;
+}
+.item {
+  padding: 20px;
+}
+
 .navbar {
-display: flex;
-background: black;
-justify-content: space-between;
-padding: var(--size);
-gap:20 px;
-}
-.navbar:hover {
-   background: brown;
+  display: flex;
+  background-color: #000000;
+  justify-content: space-around;
 }
 .navbar a {
-   color: white;
-   text-decoration:none;
-   padding: .5 rem var(--size);
-}
-.content{
-   display:grid;
-   grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
-   gap: var(--size);
-   padding:var(--size)
-}
-.content div {
-background-color: #f1f1f1;
-padding: var(--size);
-text-align: center;
-transition: 1s linear;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
 }
 
-.content div:hover{
- background:rgb(85, 76, 8);
-}
-.box{
-   background: #f1f1f1;
-   transition: 1sec;
-}
-.box:hover{
-   background: yellow;
+.icono-box {
+  display: flex;
+
+  padding: 5px;
+  margin: 20px;
+  text-align: center;
+  font-size: 5px;
+  flex: 1;
+  border-radius: 30px;
 }
 
-button{
-   box-sizing: 20px;
-   min-height: 100vh;
-   align-content: center;
-   justify-content: center;
-   align-items: center;
-   background-color: rgb(251, 4, 4);
-   
+.icono {
+  width: 30px;
+  background-color: #ffffff;
 }
-.button-animation{
-width: 200px;
-height: 30px;
-font-size: 4rem;
-}
-
-.button-animation:active {
-transform: scale(.9);
-}
-.button-animation:hover{
-   animation:button-animation 0.9 both;
-}
-@keyframes .button-animation {
-   0%{
-      transform: scale3d(1, 1, 1,);
-   }
-   50%{
-      transform: scale3d(1, 15, 0.85,1) 
-   }
+.stiky {
+  position: sticky;
+  top: 0;
+  width: 0;
 }
